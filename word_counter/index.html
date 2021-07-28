@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CISC 3140, Lab 3 Task 2</title>
+    <style>
+        html {
+            background-color: #83c5ff;
+            font-family: "Arial Narrow";
+        }
+    </style>
+</head>
+
+<body>
+    <h1><u>Word Counter</u></h1>
+
+    <div>
+        <label for="textCount">Please enter your text:</label>
+        <br>
+        <textarea id="textCount" name="textCount" rows="5" cols="33" placeholder="Enter your text here"></textarea>
+    </div>
+
+    <br>
+
+    <div>
+        Total # of words in text:
+        <span id="totalCount"></span>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <p>
+        References:
+        <br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener">https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener</a>
+        <br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventListener">https://developer.mozilla.org/en-US/docs/Web/API/EventListener</a>
+        <br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea</a>
+        <br>
+        <a href="https://www.w3schools.com/js/js_output.asp">https://www.w3schools.com/js/js_output.asp</a>
+    </p>
+
+
+    <script type="text/javascript">
+        textCount.addEventListener("keyup", function () {
+            wordCount(textCount.value)
+        })
+
+        function wordCount(textCount) {
+            let text = document.getElementById("textCount").value;
+            let textArray = text.split(' ');
+            let wordCount = 0;
+            for (let i = 0; i < textArray.length; i++) {
+                if (textArray[i] != ' ') {
+                    wordCount++;
+                }
+            }
+            document.getElementById("totalCount").innerHTML = wordCount.toString();
+        }
+    </script>
+</body>
+</html>
