@@ -1,4 +1,4 @@
-## CISC 3140: Large-Web Application
+## CISC 3140: Large-Scale Application
 ***
 ### Lab 3, Task 2
 
