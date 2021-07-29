@@ -2,7 +2,12 @@
 ***
 ### Lab 3, Task 2
 
-This task is to create a word counter using HTML and Javascript. 
+This task is to create a word counter using HTML and Javascript.  
+
+The link to the page is:  
+> https://zbetty.github.io/word_counter
+  
+    
 
 This is what the page will look like upon loading it:  
 
