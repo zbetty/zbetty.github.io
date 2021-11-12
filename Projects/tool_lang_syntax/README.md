@@ -7,7 +7,7 @@
 **Objective:** To use CSS to style HTML table containing information regarding tools and languages that were introduced in CISC 3140.
 
 **Link:**
-> https://zbetty.github.io/tool_lang_syntax
+> https://zbetty.github.io/Projects/tool_lang_syntax
 
 ***
 
